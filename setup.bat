@@ -1,7 +1,6 @@
 @echo off
 
-md c:\home\latex\sty\fao
-xcopy sty c:\home\latex\sty\fao /s /y
+robocopy sty c:\home\latex\sty\fao /e /ndl /nfl /njs
 setx TEXINPUTS .//;c:/home/latex//;
 
 echo Installation completed
